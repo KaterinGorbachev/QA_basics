@@ -4,13 +4,17 @@
 
 ### Quotes ¨¨
 
-- single ´´´ or double ¨¨¨¨ - up to three quotation marks in a row, can be outside, both single and double - print ("""I like a lot "Lord of rings".""")
+- single ´´´ or double ¨¨¨¨ - up to three quotation marks in a row, can be outside, both single and double -
+```python 
+print ("""I like a lot "Lord of rings".""")
+```
 
 Triple quotes - to enclose multi-line string data:
+```python 
 print("""One 
 Two
 Three""")
-
+```
 String operators must be enclosed in quotes
 
 ### ,
@@ -48,8 +52,9 @@ String operators must be enclosed in quotes
 ### 4 first spaces 
 
 - to determine that the next part is used only for some conditions thar are above
-
-	- name = input("What's your name? ")
+  
+```python
+name = input("What's your name? ")
 
 match name: 
     case "Harry" | "Hermione" | "Ron": 
@@ -62,6 +67,7 @@ match name:
         print("Slytherine")
     case _: 
         print("Who?")
+```
 
 ### |
 
@@ -70,17 +76,18 @@ match name:
 ### colon :
 
 - to event a function 
-
-	- while i != 0: 
+```python
+while i != 0: 
     print("meow")
-
-		- def main():
+```
+```python
+def main():
    x = int(input("What's x? "))
    if is_even(x): 
       print("Even")
    else: 
       print("Odd")
-
+```
 ### +=
 
 - to add smth to the  argument
@@ -88,40 +95,43 @@ match name:
 	- i += 1 means i = i + 1
 
 - to add one string to the other 
-
-	- full_name = first_name + ' ' + last_name
-
+```python
+full_name = first_name + ' ' + last_name
+```
 ### _
 
-- to add variable that name is not necessary (in loops)  
-
-	- for _ in range(3):
+- to add variable that name is not necessary (in loops)  - only for python 
+```python
+for _ in range(3):
     print("meow")
-
-		- only for python 
+```
+		
 
 ### asterisk *
 
-- to multiply function print 
-
-	- print ("meow" * 3) 
-
-		- only for python 
+- to multiply function print - only for python
+```python
+print ("meow" * 3) 
+```
+		 
 
 ### \
 
 - to divide instruction in a few lines 
+```python
+result = var1 * 2 + var2 * 3 \
+         var3 * 4 + var4 * 5
+```
 
-	- result = var1 * 2 + var2 * 3 \
-               var3 * 4 + var4 * 5
-
-		- when the functions argument is in the parentheses () - is not necessary to use \ for  such division by lines 
+- when the functions argument is in the parentheses () - is not necessary to use \ for  such division by lines 
 
 - screening
 
 	- to put the new line 
 
-		- print ("meow\n" * 3)
+		- ```python
+    			print ("meow\n" * 3)
+    	  ```
 
 		- \n
 
@@ -177,11 +187,12 @@ match name:
 {} is a placeholder for a variable or expression
 
 	- with F-string make messages which contain variable and do format of a numbers in different way 
+	```python
+		name = input("what's name? ")
+		print(f'Hello, {name}.')
+ 	```
 
-		- name = input("what's name? ")
-print(f'Hello, {name}.')
-
-			- using of variable in an expression in the {}, like {val + 2} - does not change the value of variable val
+- using of variable in an expression in the {}, like {val + 2} - does not change the value of variable val
 
 - specify a format 
 the subsequence of markers
@@ -337,8 +348,9 @@ the subsequence of markers
 ### strings
 
 - to connect strings in one  
-
-	- name = "Jon" + "Adams"
+	```python
+	 name = "Jon" + "Adams"
+ 	```
 
 - to multiply strings
 
@@ -442,7 +454,7 @@ The original string remains unchanged (strings are immutable in Python).
 - If the first character in the string is a letter (note: the first character is the element with index equal to 0, not the first visible character), it will be converted to uppercase.
 - All remaining letters in the string will be converted to lowercase.
 
-		- the result must be used or saved or it will be lost 
+- the result must be used or saved or it will be lost 
 
 - swapcase()
 
@@ -531,27 +543,25 @@ The original string remains unchanged (strings are immutable in Python).
 ### to search in a string
 
 - for item in string: 
-
-	- name = "Julia"
-
+```python
+name = "Julia"
 for item in name: 
      item = "x"
 print name
+```
+- will print "Julia", operation in for does not affect string
 
-		- will print "Julia", operation in for does not affect string
-
-		- immutable: cant be changed after creating
+- immutable: cant be changed after creating
 
 - indexes
 
-	- name[0] - name[4]
-J                       a
+	- name[0] J - name[4] a
+
 
 	- -index : to access end of the string
 it plus negative index to the length of the string 
 
-		- name[-1] - name[-5]
-a                          J
+		- name[-1]a - name[-5]J
 
 ### slices
 
@@ -2112,9 +2122,12 @@ print("Fuera del bucle.")
 					- The exit of the program will be:
 
 						- La instrucción break:
-Dentro del bucle. 1
-Dentro del bucle. 2
-Fuera del bucle.
+
+Dentro del bucle. 1
+
+Dentro del bucle. 2
+
+Fuera del bucle.
 
 
 			- end = 6
@@ -2153,11 +2166,16 @@ print("Fuera del bucle.")
 					- The exit of the program will be:
 
 						- La instrucción continue:
-Dentro del bucle. 1
-Dentro del bucle. 2
-Dentro del bucle. 4
-Dentro del bucle. 5
-Fuera del bucle.
+
+Dentro del bucle. 1
+
+Dentro del bucle. 2
+
+Dentro del bucle. 4
+
+Dentro del bucle. 5
+
+Fuera del bucle.
 
 ### bool type of data
 
@@ -3253,7 +3271,8 @@ def test_positive():
 
 def test_positive():
        assert square(-2) == 4
-       assert square(-3) == 9
+
+       assert square(-3) == 9
 
 
 def test_zero():
@@ -4317,7 +4336,8 @@ def test_positive():
 
 def test_positive():
        assert square(-2) == 4
-       assert square(-3) == 9
+
+       assert square(-3) == 9
 
 
 def test_zero():
@@ -4364,6 +4384,7 @@ def test_default():
     assert hello() == "hello, world"
 
 def test_argument():
+
     for name in ["Hermione", "Harry", "Ron"]:
          assert hello("David") == f"hello, {name}"
 
