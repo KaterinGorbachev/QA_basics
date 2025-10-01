@@ -329,8 +329,8 @@ the subsequence of markers
 
 	- Returns the argument as an integer type 
 
-		- ```python
-    		hours = int(input('How many hours you have been working? ')
+		```python
+  		hours = int(input('How many hours you have been working? ')
     	```
 
 - float(argument)
@@ -361,7 +361,7 @@ the subsequence of markers
 
 - to connect strings in one  
 	```python
-	 name = "Jon" + "Adams"
+	name = "Jon" + "Adams"
  	```
 
 - to multiply strings
@@ -426,30 +426,30 @@ All elements in the list will be joined into a single string, but...
 ...the string from which the method was called will be used as a separator, placed between the strings.
 The newly created string is returned as the result.
 
-	- ```python
-   		print(",".join(["omicron", "pi", "rho"]))
+	```python
+ 	print(",".join(["omicron", "pi", "rho"]))
    	```
 
 - Output: omicron,pi,rho
 
 	- works with tuple
 
-		- ```python
-    		",".join(("omicron", "pi", "rho"))
+		```python
+  		",".join(("omicron", "pi", "rho"))
     	```
 
 - center()
 
 	- generates a copy of the original string, attempting to center it within a field of a specified width.
 
-		- ```python
-    		print('[' + 'gamma'.center(20, '*') + ']')
+		```python
+  		print('[' + 'gamma'.center(20, '*') + ']')
     	```
 
 	- It is actually done by adding some spaces before and after the string
 
-		- ```python
-    		print('[' + 'alpha'.center(10) + ']')
+		```python
+  		print('[' + 'alpha'.center(10) + ']')
     	```
 
 - lower()
@@ -538,35 +538,38 @@ The original string remains unchanged (strings are immutable in Python).
 
 	- returns a changed copy of a string 
 
-		- ```python
-    		print("This is it!".replace("is", "are"))
+		```python
+  		print("This is it!".replace("is", "are"))
     	```
 
 	Output: Thare are it!
 
 	- used to delete symbols
 
-		- ```python
-    		print("Apple juice".replace("juice", ""))
+		```python
+  		print("Apple juice".replace("juice", ""))
     	```
 
 	- with a limit of replacing in 1
 
-		- ```python
-    		print("This is it!".replace("is", "are", 1))
-          ```
+		```python
+  		print("This is it!".replace("is", "are", 1))
+  		```
 
 - CHAIN METHODS
 
-	- ```python
-   		s = s.replace('fácil', 'difícil').replace('im', '')
+	```python
+ 	s = s.replace('fácil', 'difícil').replace('im', '')
+ 	```
    
 
 - filter()
 
 	- Using Python’s filter function allows us to return a subset of a sequence for which a certain condition is true.
 
-		- gryffindors = filter(is_gryffindor, students)
+		```python
+  		gryffindors = filter(is_gryffindor, students)
+  		```
 
 ### to search in a string
 
@@ -675,16 +678,15 @@ print(mi_capitalize(lines))
 	- list.append(value) - adds the value (1 argument)  to the end of the list
 
 		- list = []
-
+```python
 for i in range(10): 
     n = int(i+1)
     list.append(n)
 
 print(list)
+```
 
-			- exit
-
-				- [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+- output  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 - insert()
 
@@ -692,18 +694,17 @@ print(list)
 second - value
 
 		- list.insert(location, value)
-
-			- list = []
+```python
+list = []
 
 for i in range(10):
     #n = int(i+1)
     list.insert(-10, i+1)
 
 print(list)
+```
 
-				- exit
-
-					- [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+output [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
 - to sort list
 
@@ -795,29 +796,33 @@ print(list)
 
 	- row = [WHITE_PAWN for i in range(8)]
 
-- change the value in one position 
-
-	- auxiliary = variable_1
+- change the value in one position
+  
+```python
+auxiliary = variable_1
 variable_1 = variable_2
 variable_2 = auxiliary
+```
 
 
-		- only for python  - right part
+- only for python  - right part
+```python
+variable_1, variable_2 = variable_2, variable_1
 
-			- variable_1, variable_2 = variable_2, variable_1
-
-			- my_list[1], my_list[2] = my_list[3], my_list[5]
-
+my_list[1], my_list[2] = my_list[3], my_list[5]
+```
 - *
 
 	- Unpacking We can use * to unpack the list so that all the elements in the list can be passed as different parameters
 
-		- print(*([c] * 5), sep = ' | ')
+```python
+print(*([c] * 5), sep = ' | ')
 rabble | rabble | rabble | rabble | rabble
+```
 
 - min(my_list)
 
-	- max(my_list)
+- max(my_list)
 
 ### index
 
@@ -830,12 +835,12 @@ rabble | rabble | rabble | rabble | rabble
 ### slices 
 
 - Slices work on lists just as with strings, and can also be used to change sub-parts of the list
-
-	- list = ['a', 'b', 'c', 'd']
+```python
+list = ['a', 'b', 'c', 'd']
 print(list[1:-1])   ## ['b', 'c']
 list[0:2] = 'z'    ## replace ['a', 'b'] with ['z']
 print(list)         ## ['z', 'c', 'd']
-
+```
 
 - my_list[start:end]
 
@@ -868,10 +873,12 @@ print(list)         ## ['z', 'c', 'd']
 			- import copy 
 c = copy.deepcopy(a)
 
-	- list_1 = [1]
+```python
+list_1 = [1]
 list_2 = list_1[:] #copy all the list_1
 list_1[0] = 2
 print(list_2) #[1]
+```
 
 - lists inside the list 
 nested list
@@ -887,31 +894,31 @@ nested list
 17
 
 
-	- list 3 dimensions
+- list 3 dimensions
 
-		- red - room, green - plant, violet - hotel
-
-		- rooms = [ [ [ [1,2,3], [4,5,6] ],[  ] ], [] ]
-
-		- rooms[hotel][plant][room]
-
+- red - room, green - plant, violet - hotel
+```python
+rooms = [ [ [ [1,2,3], [4,5,6] ],[  ] ], [] ]
+rooms[hotel][plant][room]
+```
 - list[0:0]   - is an empty list 
 
 ### list comprehension 
 
 - to fill the list 
+```python
+	row = [WHITE_PAWN for i in range(8)]
 
-	- row = [WHITE_PAWN for i in range(8)]
-
-	- board = [[EMPTY for i in range(8)] for j in range(8)]
-
+	board = [[EMPTY for i in range(8)] for j in range(8)]
+```
 
 
 - condition comprehension
 
 	- expression_one if condition else expression_two
-
-		- the_list = [(1 if x % 2 == 0 else 0) for x in range(10)]
+```python
+		the_list = [(1 if x % 2 == 0 else 0) for x in range(10)]
+```
 
 ### [lista[0]]
 
@@ -924,7 +931,8 @@ nested list
 ### immutable collection of data
 can not change the value
 
-- def main():
+```python
+def main():
     name, house = get_student()   #student = get_student()   to assign value tuple to variable student
     print(f"{name} from {house}")   #print(f"{student[0]} from {student[1]}")    
 
@@ -937,7 +945,7 @@ def get_student():
 
 if __name__ == "__main__":
     main()
-
+```
 
 
 - Type error 
@@ -945,18 +953,22 @@ if __name__ == "__main__":
 	- tuple object does not support item assignment
 
 - nested tuple is possible
-
+- 
+```python
 ### a = (1,)     - a is tuple 
 a = 1,       - a is tuple
+```
 
 ### can work with positions in tuple
 
-- my_tuple = (1, 10, 100, 1000)
+```python
+my_tuple = (1, 10, 100, 1000)
 
 print(my_tuple[0])
 print(my_tuple[-1])
 print(my_tuple[1:])
 print(my_tuple[:-2])
+```
 
 ### to delete last element
 
@@ -988,7 +1000,9 @@ print(my_tuple[:-2])
 
 ### tuple with 1 element 
 
-- my_tuple = (1, )
+```python
+my_tuple = (1, )
+```
 
 ## dictionary
 
@@ -1010,16 +1024,18 @@ print(my_tuple[:-2])
 
 ### The order in which a dictionary stores its data is beyond our control.
 
-### def get_student():
+```python
+def get_student():
     student = {}
     student["name"] = input("Name: ")   #first key
     student["house"] = input("House: ")  #second key
     return student
 
-- def get_student():
+def get_student():
     name = input("Name: ")
     house = input("House: ")
     return {"name": name, "house": house} 
+```
 
  #introducing keys in the return line
 
@@ -1031,10 +1047,12 @@ print(my_tuple[:-2])
 
 	- Keys are type sensitive - str or int or float y etc
 
-	-     if word in dictionary:
+   ```python
+	if word in dictionary:
         print(word, "->", dictionary[word])
     else:
         print(word, "no está en el diccionario")
+   ```
 
 
 ### methods for dictionaries
@@ -1043,16 +1061,20 @@ print(my_tuple[:-2])
 
 	- A dictionary is not a sequential data type - the for loop is not useful here.
 
-	- dictionary = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+```python
+dictionary = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
 
 for key in dictionary.keys():
     print(key, "->", dictionary[key])
+```
 
-	- with function sorted()
+- with function sorted()
 
-		- for key in sorted(dictionary.keys()):
+```python
+for key in sorted(dictionary.keys()):
+```
 
-	- The keys() method in Python Dictionary, returns a view object that displays a list of all the keys in the dictionary in order of insertion
+- The keys() method in Python Dictionary, returns a view object that displays a list of all the keys in the dictionary in order of insertion
 
 - items()
 
@@ -1060,27 +1082,30 @@ for key in dictionary.keys():
 
 		- where each tuple is a pair of each key with its value
 
-			- dictionary = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+```python
+dictionary = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
 
 for spanish, french in dictionary.items():
     print(spanish, "->", french)
-
+```
 
 - values()
 
 	- returns only values
 
-		- my_dict = {'a': 10, 'b': 20, 'c': 30}
+```python
+my_dict = {'a': 10, 'b': 20, 'c': 30}
 values = my_dict.values()
-
 print(values)  # Output: dict_values([10, 20, 30])
+```
 
 - update()
 
-	- dictionary = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
-
+```python
+dictionary = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
 dictionary.update({"pato": "canard"})
 print(dictionary)
+```
 
 - get()
 
@@ -1152,17 +1177,18 @@ print(dictionary)
 
 - to change 
 
-	- dictionary = {"gato" : "perro", "dog" : "chien", "caballo" : "cheval"}
+```python
+dictionary = {"gato" : "perro", "dog" : "chien", "caballo" : "cheval"}
 
 dictionary['gato'] = 'minou'
+```
+- cant change key, only delete and add new key
 
-	- cant change key, only delete and add new key
-
-	- dictionary = {"gato" : 1, "dog" : "chien", "caballo" : "cheval"}
-
+```python
+dictionary = {"gato" : 1, "dog" : "chien", "caballo" : "cheval"}
 dictionary['gato'] += 1
-
-		- gato: 2
+#gato: 2
+```
 
 ## class
 
@@ -1170,6 +1196,7 @@ dictionary['gato'] += 1
 
 creating custom data type
 
+```python
 - class Student:       #may or may not have some
                              # future functionality as well
     ...
@@ -1185,6 +1212,7 @@ def get_student():
 def main():
     student = get_student()
     print(f"{student.name} from {student.house}")
+```
 
 - mutable, but you can make them immutable
 
@@ -1192,7 +1220,8 @@ def main():
 
 	- composition projects a class as a container able to store and use other objects (derived from other classes) where each of the objects implements a part of a desired class's behavior.
 
-		- class Tracks:
+```python
+class Tracks:
     def change_direction(self, left, on):
         print("tracks: ", left, on)
 
@@ -1214,13 +1243,14 @@ class Vehicle:
 
 wheeled = Vehicle(Wheels())
 tracked = Vehicle(Tracks())
-
+```
 
 ### Inheritance
 
 - create a class that “inherits” methods, variables, and attributes from another class.
 
-	- class Wizard:
+```python
+class Wizard:
     def __init__(self, name):
         if not name:
             raise ValueError("Missing name")
@@ -1249,16 +1279,17 @@ wizard = Wizard("Albus")
 student = Student("Harry", "Gryffindor")
 professor = Professor("Severus", "Defense Against the Dark Arts")
 ...
+```
 
 
-
-		-  Both students and professors have names. Also, both students and professors are wizards. Therefore, both Student and Professor inherit the characteristics of Wizard. Within the “child” class Student, Student can inherit from the “parent” or “super” class Wizard as the line super().__init__(name) runs the init method of Wizard
+-  Both students and professors have names. Also, both students and professors are wizards. Therefore, both Student and Professor inherit the characteristics of Wizard. Within the “child” class Student, Student can inherit from the “parent” or “super” class Wizard as the line super().__init__(name) runs the init method of Wizard
 
 	- Python forces you to explicitly invoke a superclass's constructor
 
 		- by using class name
 
-			- class AddingStack(Stack):
+```python
+class AddingStack(Stack):
     def __init__(self):
         Stack.__init__(self)
         self.__sum = 0
@@ -1270,9 +1301,9 @@ professor = Professor("Severus", "Defense Against the Dark Arts")
 				- class Sub(Super):
     def __init__(self, name):
         super().__init__(name)
+```
 
-
-			- you can use this mechanism not only to invoke the superclass constructor, but also to get access to any of the resources available inside the superclass.
+- you can use this mechanism not only to invoke the superclass constructor, but also to get access to any of the resources available inside the superclass.
 
 	- how to check if there is inheritance 
 
@@ -1314,7 +1345,8 @@ professor = Professor("Severus", "Defense Against the Dark Arts")
 
 	- overriding
 
-		- class Level1:
+```python
+class Level1:
     var = 100
     def fun(self):
         return 101
@@ -1335,10 +1367,12 @@ obj = Level3()
 print(obj.var, obj.fun())
 
 			- -----> 200 201 
+```
 
 The entity defined later (in the inheritance sense) overrides the same entity defined earlier
 
-	- class Left:
+```python
+class Left:
     var = "L"
     var_left = "LL"
     def fun(self):
@@ -1360,11 +1394,13 @@ obj = Sub()
 
 print(obj.var, obj.var_left, obj.var_right, obj.fun())
 
+```
 
-		- checks a variable var first in the class Right and then in the class Left
+- checks a variable var first in the class Right and then in the class Left
 
 - Inheritance and Exceptions
 
+```python
 	- BaseException
  +-- KeyboardInterrupt
  +-- Exception
@@ -1381,7 +1417,7 @@ print(obj.var, obj.var_left, obj.var_right, obj.fun())
       +-- SyntaxError
       |    +-- IndentationError
       +-- ValueError
- ...
+ ```
 
 - Class hierarchies
 
@@ -1389,7 +1425,8 @@ print(obj.var, obj.var_left, obj.var_right, obj.fun())
 
 - adding functionality to the child class
 
-	- class Stack:
+```python
+class Stack:
     def __init__(self):
         self.__stackList = []
 
@@ -1416,14 +1453,16 @@ class AddingStack(Stack):
     val = Stack.pop(self)
     self.__sum -= val
     return val
+```
 
+- using superclass method in the child class, which already exists
 
-		- using superclass method in the child class, which already exists
+- __sum is totally hidden variable - requires a get method to return it 
 
-		- __sum is totally hidden variable - requires a get method to return it 
-
-			- def get_sum(self):
+```python
+def get_sum(self):
     return self.__sum
+```
 
 
 - polymorphism
@@ -1432,7 +1471,8 @@ class AddingStack(Stack):
 
 	- abstract method
 
-		- class Animal: 
+```python
+class Animal: 
     
     def __init__(self, especie, edad):
           self.especie = especie
@@ -1441,14 +1481,16 @@ class AddingStack(Stack):
     def hablar(self): 
          pass       
 
-			- class Perro(Animal): 
+class Perro(Animal): 
      
      def hablar(self): 
           print("Gua")  
+```
 
 ### operating overloading
 
-- class Vault:
+```python
+class Vault:
     def __init__(self, galleons=0, sickles=0, knuts=0):
         self.galleons = galleons
         self.sickles = sickles
@@ -1473,11 +1515,12 @@ print(weasley)
 total = potter + weasley
 print(total)
 
-
+```
 
 ### variables global and private 
 
-- balance = 0
+```python
+balance = 0
 
 
 def main():
@@ -1500,11 +1543,12 @@ def withdraw(n):
 if __name__ == "__main__":
     main()
 
+```
 
+- Classes allow us to solve this issue of needing a global variable more cleanly because these instance variables are accessible to all the methods of this class utilizing self
 
-	- Classes allow us to solve this issue of needing a global variable more cleanly because these instance variables are accessible to all the methods of this class utilizing self
-
-		- class Account:
+```python
+class Account:
     def __init__(self):
         self._balance = 0
 
@@ -1530,20 +1574,22 @@ def main():
 if __name__ == "__main__":
     main()
 
+```
 
+- self._balance
 
-		- self._balance
+	- only indicates that variable is private, but that can be changed from outside
 
-			- only indicates that variable is private, but that can be changed from outside
+- self.__balance
 
-		- self.__balance
+	- two _ - changes the name of variable, so that its harder to change from the outside
 
-			- two _ - changes the name of variable, so that its harder to change from the outside
+```python
+obj = Account()
+print(dir(obj))
+```
 
-			- obj = Account()
-print(dir(obj)) 
-
-				- to see the new name of a balance
+- to see the new name of a balance
 
 - private
 
@@ -1562,8 +1608,8 @@ print(dir(obj))
 		- self.__my_private_variable = 42
 
 		- The mangling won't work if you add a private instance variable outside the class code.
-
-- class Persona: 
+```python
+class Persona: 
 
     ## variables Class
     fallecido = False 
@@ -1588,12 +1634,14 @@ print(dir(obj))
 
         return "{} {} {}".format(self.nombre, self.apellido, self.edad)
     
+```
 
 - instance variables
 
 	- closely connected to the object not to the class
 
-		- class ExampleClass:
+```python
+class ExampleClass:
     def __init__(self, val = 1):
         self.__first = val
 
@@ -1608,17 +1656,21 @@ example_object_2.set_second(3)
 
 example_object_3 = ExampleClass(4)
 example_object_3.third = 5
+```
 
 - A class variable is a property which exists in just one copy and is stored outside any object.
 A class variable exists in one copy even if there are no objects in the class.
 
 	- a class variable always presents the same value in all class instances (objects)
 
-		- class ExampleClass:
+```python
+class ExampleClass:
     counter = 0
     def __init__(self, val = 1):
         self.__first = val
         ExampleClass.counter += 1
+
+```
 
 - AttributeError
 
@@ -1626,21 +1678,23 @@ A class variable exists in one copy even if there are no objects in the class.
 
 		- checking attribute existence
 
-			- try:
+```python
+try:
 except:
+```
 
-			- function
+- function
 
-				- hasattr(example_object, 'b')
-
-					- 
+```python
+hasattr(example_object, 'b')
+```
+					
 the class or the object being checked;
 the name of the property whose existence has to be reported (note: it has to be a string containing the attribute name, not the name alone)
 
+- can use it to find out if a class variable is available
 
-					- can use it to find out if a class variable is available
-
-					- returns True or False
+- returns True or False
 
 ### methods
 
@@ -1654,7 +1708,8 @@ the name of the property whose existence has to be reported (note: it has to be 
 
 		- is a function that we can use to add functionality to a class as a whole
 
-			- class Student:
+```python
+class Student:
     def __init__(self, name, house):
         self.name = name
         self.house = house
@@ -1676,13 +1731,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
 
 
+- Notice that get_student is removed and a @classmethod called get is created. This method can now be called without having to create a student first.
 
-				- Notice that get_student is removed and a @classmethod called get is created. This method can now be called without having to create a student first.
-
-			- import random
-
+```python
+import random
 
 class Hat:
 
@@ -1717,11 +1772,13 @@ Hat.sort("Harry")
 
         return cls('Harina, Leche, Huevos, Vainilla', tam)
     ## devuelva un objeto
+```
 
-	- prescribed functions for a class
+- prescribed functions for a class
 actions they can perform
 
-		- class Student:
+```python
+class Student:
     def __init__(self, name, house, patronus=None):
         if not name:
             raise ValueError("Missing name")
@@ -1747,11 +1804,12 @@ actions they can perform
             case _:
                 return "🪄"
 
+```
 
+- function charm(self) by convention must take at least 1 argument called self - to get access to the current object of a class Student
 
-			- function charm(self) by convention must take at least 1 argument called self - to get access to the current object of a class Student
-
-			- def main():
+```python
+def main():
     student = get_student()
     print("Expecto Patronum!")
     print(student.charm())
@@ -1766,12 +1824,14 @@ def get_student():
 
 if __name__ == "__main__":
     main()
+```
 
-	- methods for classes 
+- methods for classes 
 
-		- __init__
+	- __init__
 
-			- class Student:
+```python
+class Student:
     def __init__(self, name, house):   #gives the opportunity  to customize the class object
         self.name = name
         self.house = house
@@ -1781,15 +1841,16 @@ def get_student():
     house = input("House: ")
     student = Student(name, house)     # a constructor call
     return student
+```
 
+- initialization method
 
-				- initialization method
+- __str__
 
-		- __str__
+- Python allows you to create a specific function by which you can print the attributes of an object.
 
-			- Python allows you to create a specific function by which you can print the attributes of an object.
-
-				- class Student:
+```python
+class Student:
     def __init__(self, name, house, patronus):
         if not name:
             raise ValueError("Missing name")
@@ -1802,10 +1863,12 @@ def get_student():
     def __str__(self):
         return f"{self.name} from {self.house}"
 
+```
 
-					- only takes 1 argument called (self) by convention
+- only takes 1 argument called (self) by convention
 
-				- class Mouse:
+```python
+class Mouse:
     def __str__(self):
         return "Mouse"
 
@@ -1814,10 +1877,10 @@ class LabMouse(Mouse):
     def __str__(self):
         return "Laboratory " + super().__str__()
 
+```
 
 
-
-			- the return object is a string and so print() is useful
+- the return object is a string and so print() is useful
 
 	- to check the class name
 
@@ -1854,15 +1917,17 @@ class LabMouse(Mouse):
 - decorators
 
 	- @staticmethod
-
-		- @staticmethod
+```python
+	@staticmethod
     def tam_area(t): 
         return t**2*math.pi
-    ### t is a size given from outside 
+    ### t is a size given from outside
+```
 
-			- does not need self
-
-	- class Student:
+- does not need self
+- 
+```python
+class Student:
     def __init__(self, name, house):
         if not name:
             raise ValueError("Invalid name")
@@ -1898,10 +1963,10 @@ def get_student():
 
 if __name__ == "__main__":
     main()
+```
+```python
 
-
-
-		- class Student:
+class Student:
     def __init__(self, name, house):
         self.name = name    #self.name without underscore to make this lines call setter 
         self.house = house
@@ -1930,15 +1995,16 @@ if __name__ == "__main__":
         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError("Invalid house")
         self._house = house
+```
 
-
-	- deleter
-
-		- @mi_atributo.deleter
+- deleter
+- 
+```python
+	@mi_atributo.deleter
     def mi_atributo(self): 
 
         del self.__mi_atributo
-
+```
 
 - __privateMethod
 
@@ -1949,16 +2015,18 @@ if __name__ == "__main__":
 ## generators 
 
 ### __iter__() which should return the object itself and which is invoked once (it's needed for Python to successfully start the iteration)
-
-- def __iter__(self):
+```python
+def __iter__(self):
         print("__iter__")
         return self
+```
 
 ### __next__() which is intended to return the next value (first, second, and so on) of the desired series
 
 - if there are no more values to provide, the method should raise the StopIteration exception
 
-- def __next__(self):
+```python
+def __next__(self):
         print("__next__")				
         self.__i += 1
         if self.__i > self.__n:
@@ -1968,19 +2036,22 @@ if __name__ == "__main__":
         ret = self.__p1 + self.__p2
         self.__p1, self.__p2 = self.__p2, ret
         return ret
+```
 
 ### yield instead of return
 
-- def fun(n):
+```python
+def fun(n):
     for i in range(n):
         yield i
+```
 
-
-	- such a function should not be invoked explicitly
+- such a function should not be invoked explicitly
 
 	- the invocation will return the object's identifier, not the series we expect from the generator
-
-- from backend.db.database import SessionLocal
+  
+```python
+from backend.db.database import SessionLocal
 
 def get_db():
     db = SessionLocal()
@@ -1988,14 +2059,15 @@ def get_db():
         yield db
     finally:
         db.close()
-
-	- Instead of the caller worrying about cleanup, get_db ensures that:
+```
+- Instead of the caller worrying about cleanup, get_db ensures that:
 
 It gives the caller a usable session (yield db).
 
 After the caller is done, the session is always closed (finally: db.close())
 
-		- from fastapi import Depends, FastAPI
+```python
+from fastapi import Depends, FastAPI
 from sqlalchemy.orm import Session
 
 app = FastAPI()
@@ -2003,8 +2075,9 @@ app = FastAPI()
 @app.get("/items/")
 def read_items(db: Session = Depends(get_db)):
     return db.query(MyModel).all()
+```
 
-			- FastAPI sees get_db() is a generator.
+- FastAPI sees get_db() is a generator.
 
 It runs it until the first yield → gives db to your endpoint function.
 
@@ -2016,29 +2089,28 @@ After the endpoint finishes, FastAPI continues the generator, executing finally:
 
 ### event a condition 
 
-- while
+- while for loop with condition 
 
-	- for loop with condition 
-
-		- i = 3 
+```python
+i = 3 
 while i != 0: 
     print("meow")
     i = i - 1
+```
+- indefinite loop 
 
-			- indefinite loop 
+	- one that goes forever 
 
-				- one that goes forever 
+		- while True:  + condition 
 
-					- while True:  + condition 
+			- input() can be inside the loop while True
 
-						- input() can be inside the loop while True
+		- while False + condition 
 
-					- while False + condition 
+			- to have a conditions for the loop termination - that checks in while that the condition is False
 
-				- to have a conditions for the loop termination - that checks in while that the condition is False
-
-					- condition is 
-
+				- condition is 
+```python
 while True:
     n = int(input()) 
     if n < 0:
@@ -2049,15 +2121,15 @@ while True:
 	- while i<5:
     i = i+1 
     print(i)
-
-		- gives 5
+```
+- output 5
 
 - for 
-
-	- for i in range(5): 
+```python
+for i in range(5): 
      print(i)
-
-		- gives 4
+```
+- output 4
 
 	- for loops with counter
 does not have a condition
@@ -2108,58 +2180,57 @@ range(2,10) - from 2 to 9
 - second - second is the end 
 - third is the step - means the difference between each number in the sequence of numbers generated by the function
 
-					- an ascending order only
+- an ascending order only
 
-						- range(10,2, 1) does not function without Error message
+- range(10,2, 1) does not function without Error message
 
-						- range(10,2,-1)  does function 
+- range(10,2,-1)  does function 
 
 - 
 break 
 
 continue 
 
-	- always inside for or while
+- always inside for or while
 
-		- break in while 
+- break in while 
 
-			- break - stop executing the condition after the first interaction 
+- break - stop executing the condition after the first interaction 
 
-				- i = 1
+```python
+i = 1
 while i < 5:
     print(i)
     i += 1
     break 
 else:
     print("else:", i)
+```
 
+- output  else:1
 
-					- output  else:1
-
-		- break in for 
-
-			- print("La instrucción break:")
+- break in for 
+```python
+print("La instrucción break:")
 for i in range(1, 6):
     if i == 3:
         break
     print("Dentro del bucle.", i)
 print("Fuera del bucle.")
+```
+breaks the loop at 3
 
-				- breaks the loop at 3
+- The exit of the program will be: La instrucción break:
 
-					- The exit of the program will be:
+		Dentro del bucle. 1
 
-						- La instrucción break:
+		Dentro del bucle. 2
 
-Dentro del bucle. 1
-
-Dentro del bucle. 2
-
-Fuera del bucle.
+		Fuera del bucle.
 
 
-			- end = 6
-or i in range (0, end-1) :
+			
+for i in range (0, end-1) :
     print(i)
     break 
 else: 
@@ -4904,6 +4975,7 @@ str
 can be any object
 
 - for PRIMARY KEY add NOT NULL
+
 
 
 
