@@ -143,9 +143,13 @@ result = var1 * 2 + var2 * 3 \
 
 				- Horizontal Tab
 
-					- print ('\t' * level + 'indented text')
+					- ```python
+       					print ('\t' * level + 'indented text')
+       				  ```
 
-						- print ((' ' * 4) * level + 'indented text')
+						- ```python
+        					print ((' ' * 4) * level + 'indented text')
+        					```
 
 	- to print one quote 
 
@@ -287,9 +291,16 @@ the subsequence of markers
 - Exponentiation 
 
 ### priorities' of operators:
-1. Exponentation **
-2. * / // %
-3. + -
+1. Exponentation
+   ```python
+		 **
+   ```
+2. ```python
+   * / // %
+   ```
+3. ```python
+   + -
+   ```
 
 ## Variable naming rules
 
@@ -319,7 +330,9 @@ the subsequence of markers
 
 	- Returns the argument as an integer type 
 
-		- hours = int(input('How many hours you have been working? ')
+		- ```python
+    		hours = int(input('How many hours you have been working? ')
+    	```
 
 - float(argument)
 
@@ -414,23 +427,31 @@ All elements in the list will be joined into a single string, but...
 ...the string from which the method was called will be used as a separator, placed between the strings.
 The newly created string is returned as the result.
 
-	- print(",".join(["omicron", "pi", "rho"]))
+	- ```python
+   		print(",".join(["omicron", "pi", "rho"]))
+   	```
 
-		- omicron,pi,rho
+- Output: omicron,pi,rho
 
 	- works with tuple
 
-		- ",".join(("omicron", "pi", "rho"))
+		- ```python
+    		",".join(("omicron", "pi", "rho"))
+    	```
 
 - center()
 
 	- generates a copy of the original string, attempting to center it within a field of a specified width.
 
-		- print('[' + 'gamma'.center(20, '*') + ']')
+		- ```python
+    		print('[' + 'gamma'.center(20, '*') + ']')
+    	```
 
 	- It is actually done by adding some spaces before and after the string
 
-		- print('[' + 'alpha'.center(10) + ']')
+		- ```python
+    		print('[' + 'alpha'.center(10) + ']')
+    	```
 
 - lower()
 
@@ -518,21 +539,29 @@ The original string remains unchanged (strings are immutable in Python).
 
 	- returns a changed copy of a string 
 
-		- print("This is it!".replace("is", "are"))
+		- ```python
+    		print("This is it!".replace("is", "are"))
+    	```
 
-			- Thare are it!
+	Output: Thare are it!
 
 	- used to delete symbols
 
-		- print("Apple juice".replace("juice", ""))
+		- ```python
+    		print("Apple juice".replace("juice", ""))
+    	```
 
 	- with a limit of replacing in 1
 
-		- print("This is it!".replace("is", "are", 1))
+		- ```python
+    		print("This is it!".replace("is", "are", 1))
+          ```
 
 - CHAIN METHODS
 
-	- s = s.replace('fácil', 'difícil').replace('im', '')
+	- ```python
+   		s = s.replace('fácil', 'difícil').replace('im', '')
+   
 
 - filter()
 
@@ -4876,4 +4905,5 @@ str
 can be any object
 
 - for PRIMARY KEY add NOT NULL
+
 
