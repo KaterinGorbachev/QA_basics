@@ -127,13 +127,13 @@ result = var1 * 2 + var2 * 3 \
 
 - screening
 
-	- to put the new line 
+	- to put the new line
+ 
+```python
+print ("meow\n" * 3)
+```
 
-		- ```python
-    			print ("meow\n" * 3)
-    	  ```
-
-		- \n
+- \n
 
 	- to make printing to the next gorizontal tab position 
 
@@ -142,18 +142,17 @@ result = var1 * 2 + var2 * 3 \
 			- print('Mn\tTu\tWnd')
 
 				- Horizontal Tab
+```python
+print ('\t' * level + 'indented text')
+```
 
-					- ```python
-       					print ('\t' * level + 'indented text')
-       				  ```
+```python
+print ((' ' * 4) * level + 'indented text')
+```
 
-						- ```python
-        					print ((' ' * 4) * level + 'indented text')
-        					```
+- to print one quote 
 
-	- to print one quote 
-
-		- \'
+	- \'
 
 	- to print backslash
 
@@ -4905,5 +4904,6 @@ str
 can be any object
 
 - for PRIMARY KEY add NOT NULL
+
 
 
