@@ -1886,7 +1886,9 @@ class LabMouse(Mouse):
 
 		- the __name__ attribute is absent from the object - it exists only inside classes
 
-			- print(Classy.__name__)
+		```python
+		print(Classy.__name__)
+  		```
 
 		- function
 
@@ -1902,7 +1904,9 @@ class LabMouse(Mouse):
 
 		- __module__
 
-			- print(Classy.__module__)
+   		```
+		print(Classy.__module__)
+     	```
 
 - of an object
 
@@ -1910,13 +1914,15 @@ class LabMouse(Mouse):
 
 		- The variable contains the names and values of all the properties (variables) the object is currently carrying
 
-			- print(example_object_1.__dict__)
+		```python
+		print(example_object_1.__dict__)
+		```
 
 		- does not work with a class
 
 - decorators
 
-	- @staticmethod
+- @staticmethod
 ```python
 	@staticmethod
     def tam_area(t): 
@@ -1925,7 +1931,7 @@ class LabMouse(Mouse):
 ```
 
 - does not need self
-- 
+  
 ```python
 class Student:
     def __init__(self, name, house):
@@ -1998,7 +2004,7 @@ class Student:
 ```
 
 - deleter
-- 
+  
 ```python
 	@mi_atributo.deleter
     def mi_atributo(self): 
@@ -2144,11 +2150,12 @@ does not have a condition
 			- loop inside the loop 
 
 				- the syntax of the for loop requires at least one statement within the body 
-
-			- power = 1
-for expo in range(16):
-    print("2 a la potencia de", expo, "es", power)
-    power *= 2
+				```python
+					power = 1
+					for expo in range(16):
+    				print("2 a la potencia de", expo, "es", power)
+    				power *= 2
+				```
 
 				- expo is control variable that starts with 0
 
@@ -4975,6 +4982,7 @@ str
 can be any object
 
 - for PRIMARY KEY add NOT NULL
+
 
 
 
