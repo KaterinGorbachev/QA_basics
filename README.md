@@ -6,3 +6,4 @@ Here are my notes about software testing
 
 
 ----
+Tester carma - [bugs found during personal sw using](https://github.com/KaterinGorbachev/QA_basics/issues) 
