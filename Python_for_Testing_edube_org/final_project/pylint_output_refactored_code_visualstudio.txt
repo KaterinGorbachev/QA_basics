@@ -1,0 +1,27 @@
+************* Module cart
+cart.py(8): [C0303] Trailing whitespace
+cart.py(39): [C0303] Trailing whitespace
+cart.py(41): [C0303] Trailing whitespace
+cart.py(44): [C0303] Trailing whitespace
+cart.py(47): [C0303] Trailing whitespace
+cart.py(53): [C0303] Trailing whitespace
+cart.py(55): [C0303] Trailing whitespace
+cart.py(58): [C0303] Trailing whitespace
+cart.py(61): [C0303] Trailing whitespace
+cart.py(62): [C0303] Trailing whitespace
+cart.py(68): [C0303] Trailing whitespace
+cart.py(70): [C0303] Trailing whitespace
+cart.py(73): [C0303] Trailing whitespace
+cart.py(76): [C0303] Trailing whitespace
+cart.py(77): [C0303] Trailing whitespace
+cart.py(86): [C0303] Trailing whitespace
+cart.py(88): [C0303] Trailing whitespace
+cart.py(92): [C0303] Trailing whitespace
+cart.py(94): [C0303] Trailing whitespace
+cart.py(96): [C0303] Trailing whitespace
+cart.py(100): [C0303] Trailing whitespace
+cart.py(102): [C0303] Trailing whitespace
+
+------------------------------------------------------------------
+Your code has been rated at 6.99/10 (previous run: 6.71/10, +0.27)
+

@@ -1,0 +1,9 @@
+2026-02-16 15:11:04,929 - ERROR - Invalid item data: {'precio': 25.0, 'quantity': 10}
+2026-02-16 15:11:21,342 - ERROR - Invalid item data: {'precio': 25.0, 'quantity': 10}
+2026-02-16 15:11:21,342 - ERROR - Invalid item data: {'precio': 25.0, 'cantidad': 10}
+2026-02-16 15:11:21,342 - ERROR - Invalid item data: {'precio': 25.0, 'quantity': 10}
+2026-02-16 15:11:21,343 - ERROR - Invalid item data: {'precio': 5.0, 'quantity': 10}
+2026-02-16 15:11:21,343 - ERROR - Invalid discount data more than max: 101
+2026-02-16 15:11:21,343 - ERROR - Invalid discount data less than min: -1
+2026-02-16 15:11:21,344 - ERROR - Invalid price data less than min: -0.1
+2026-02-16 15:11:21,344 - ERROR - Invalid quantity data less than min: -1

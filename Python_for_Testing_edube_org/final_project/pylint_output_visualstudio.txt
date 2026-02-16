@@ -1,0 +1,30 @@
+************* Module cart
+cart.py(7): [C0303] Trailing whitespace
+cart.py(16): [C0303] Trailing whitespace
+cart.py(21): [C0303] Trailing whitespace
+cart.py(23): [C0301] Line too long (102/100)
+cart.py(30): [C0303] Trailing whitespace
+cart.py(33): [C0301] Line too long (103/100)
+cart.py(34): [C0303] Trailing whitespace
+cart.py(40): [C0303] Trailing whitespace
+cart.py(44): [C0303] Trailing whitespace
+cart.py(48): [C0301] Line too long (103/100)
+cart.py(60): [C0303] Trailing whitespace
+cart.py(64): [C0301] Line too long (103/100)
+cart.py(75): [C0301] Line too long (114/100)
+cart.py(80): [C0303] Trailing whitespace
+cart.py(97): [C0304] Final newline missing
+cart.py(1): [C0114] Missing module docstring
+cart.py(21): [C0103formatLoggs] Function name "formatLoggs" doesn't conform to snake_case naming style
+cart.py(30): [C0103consoleLogger] Function name "consoleLogger" doesn't conform to snake_case naming style
+cart.py(30): [W0621consoleLogger] Redefining name 'logger' from outer scope (line 17)
+cart.py(44): [C0103infoLogger] Function name "infoLogger" doesn't conform to snake_case naming style
+cart.py(44): [W0621infoLogger] Redefining name 'logger' from outer scope (line 17)
+cart.py(60): [C0103errorLogger] Function name "errorLogger" doesn't conform to snake_case naming style
+cart.py(60): [W0621errorLogger] Redefining name 'logger' from outer scope (line 17)
+cart.py(81): [C0116calculate_total] Missing function or method docstring
+cart.py(92): [C0116validate_cart] Missing function or method docstring
+
+------------------------------------------------------------------
+Your code has been rated at 3.24/10 (previous run: 0.00/10, +3.24)
+
