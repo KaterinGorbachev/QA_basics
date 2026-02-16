@@ -1,0 +1,50 @@
+cart.py:4:1: E266 too many leading '#' for block comment
+cart.py:4:80: E501 line too long (96 > 79 characters)
+cart.py:5:1: E265 block comment should start with '# '
+cart.py:6:80: E501 line too long (91 > 79 characters)
+cart.py:6:92: W291 trailing whitespace
+cart.py:7:80: E501 line too long (93 > 79 characters)
+cart.py:8:80: E501 line too long (117 > 79 characters)
+cart.py:9:1: E265 block comment should start with '# '
+cart.py:12:1: E265 block comment should start with '# '
+cart.py:13:80: E501 line too long (100 > 79 characters)
+cart.py:14:80: E501 line too long (98 > 79 characters)
+cart.py:16:79: W291 trailing whitespace
+cart.py:20:1: E265 block comment should start with '# '
+cart.py:21:1: E302 expected 2 blank lines, found 1
+cart.py:21:20: W291 trailing whitespace
+cart.py:23:80: E501 line too long (102 > 79 characters)
+cart.py:27:1: E265 block comment should start with '# '
+cart.py:29:1: E302 expected 2 blank lines, found 1
+cart.py:29:28: W291 trailing whitespace
+cart.py:30:60: W291 trailing whitespace
+cart.py:31:80: E501 line too long (92 > 79 characters)
+cart.py:32:80: E501 line too long (103 > 79 characters)
+cart.py:33:34: W291 trailing whitespace
+cart.py:39:44: W291 trailing whitespace
+cart.py:40:1: E305 expected 2 blank lines after class or function definition, found 1
+cart.py:42:1: E265 block comment should start with '# '
+cart.py:43:1: E302 expected 2 blank lines, found 1
+cart.py:43:25: W291 trailing whitespace
+cart.py:45:80: E501 line too long (81 > 79 characters)
+cart.py:46:62: W291 trailing whitespace
+cart.py:48:80: E501 line too long (103 > 79 characters)
+cart.py:57:1: E305 expected 2 blank lines after class or function definition, found 1
+cart.py:59:1: E265 block comment should start with '# '
+cart.py:60:1: E302 expected 2 blank lines, found 1
+cart.py:60:25: W291 trailing whitespace
+cart.py:62:80: E501 line too long (83 > 79 characters)
+cart.py:63:80: E501 line too long (92 > 79 characters)
+cart.py:64:80: E501 line too long (103 > 79 characters)
+cart.py:68:32: F821 undefined name 'formatLoggs'
+cart.py:73:1: E305 expected 2 blank lines after class or function definition, found 1
+cart.py:75:1: E265 block comment should start with '# '
+cart.py:75:80: E501 line too long (114 > 79 characters)
+cart.py:76:1: E266 too many leading '#' for block comment
+cart.py:77:1: E266 too many leading '#' for block comment
+cart.py:78:1: E266 too many leading '#' for block comment
+cart.py:79:1: E265 block comment should start with '# '
+cart.py:80:1: E266 too many leading '#' for block comment
+cart.py:80:23: W291 trailing whitespace
+cart.py:81:1: E302 expected 2 blank lines, found 1
+cart.py:92:1: E302 expected 2 blank lines, found 1
