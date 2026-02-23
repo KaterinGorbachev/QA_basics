@@ -26,3 +26,7 @@ Tester carma - [bugs found during personal sw using](https://github.com/KaterinG
 
 [Risk Matrix](https://docs.google.com/spreadsheets/d/1v8MUR7PQs62Oq2Yb6bGrbtUEuP--XS9Q-xIhxdfUUaA/edit?gid=0#gid=0) Directive (EU) 2019/882 of the European Parliament and of the Council of 17 April 2019 on the accessibility requirements for products and services 
 
+[Check-list](https://github.com/andrewhick/accessibility/wiki/Accessibility-checklist)
+
+[WCAG 2.2](https://www.w3.org/TR/WCAG22/)
+
